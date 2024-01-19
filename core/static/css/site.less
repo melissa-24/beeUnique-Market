@@ -1,0 +1,65 @@
+@import './root/root.less';
+
+// mobile first @ 350px
+body {
+    .flexcolumn();
+    background-color: @bg;
+    color: @font;
+    font-family: 'Raleway', sans-serif;
+    width: 95%;
+
+    header {
+        .flexcolumn();
+        border-bottom: @border 3px solid;
+        width: 100%;
+        padding-bottom: .5em;;
+
+        .header {
+            .flexcolumn();
+
+            .desktop {
+                display: none;
+            }
+
+            img {
+                max-width: 200px;
+                margin: .5em;
+                padding: .2em;
+                .border01();
+                background-color: @dark-accent02;
+            }
+        }
+
+        .mode {
+            .flexcolumn();
+
+            .change {
+                background-color: @accent02;
+                .border01();
+                padding: .5em;
+                margin: .5em;
+                box-shadow: 3px 3px @dark-accent02;
+            }
+        }
+
+        nav {
+            .flexcolumn();
+
+            #myLinks {
+                display: none;
+            }
+        }
+    }
+    main {
+        .flexcolumn();
+    }
+    footer {
+        .flexcolumn();
+    }
+}
+
+
+@import './root/darkmode.less';
+
+
+@import './root/media.less';

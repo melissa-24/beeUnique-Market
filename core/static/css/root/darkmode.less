@@ -1,0 +1,22 @@
+@import './root.less';
+
+body.dark {
+    background-color: @dark-bg;
+    color: @dark-font;
+
+    a {
+        color: @dark-accent01;
+    }
+    header {
+        .header {
+            img {
+                background-color: @dark-accent02;
+            }
+        }
+        .mode {
+            .change {
+                background-color: @dark-accent01;
+            }
+        }
+    }
+}

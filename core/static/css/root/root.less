@@ -1,0 +1,67 @@
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Volkhov&display=swap');
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Volkhov', serif;
+
+
+// Base functions
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.altflexrow {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.altflexcolumn {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+// colors
+@bg: #BDC4D1;
+@dark-bg: #323A48;
+@font: #002028;
+@dark-font: #D6F7FF;
+@border: #B68F47;
+@accent01: #283F6B;
+@dark-accent01: #88A2D3;
+@accent02: #CAC887;
+@dark-accent02: #464534;
+
+// media
+
+@1250: ~"only screen and (min-width: 1250px)";
+@1150: ~"only screen and (min-width: 1150px)";
+@1075: ~"only screen and (min-width: 1075px)";
+@850: ~"only screen and (min-width: 850px)";
+@730: ~"only screen and (min-width: 730px)";
+@650: ~"only screen and (min-width: 650px)";
+@500: ~"only screen and (min-width: 500px)";
+@400: ~"only screen and (min-width: 400px)";
+
+
+// base settings
+
+a {
+    color: @accent01;
+}
+.border01 {
+    border: @border 3px groove;
+    border-radius: 20%;
+}

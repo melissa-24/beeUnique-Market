@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% block head %}
+    <header>
+        <div class="header">
+            <img src="https://images.craftsnherbs.com/logos/beeuniqueMarketLogo.png" alt="logo" class="mobile">
+            <img src="https://images.craftsnherbs.com/logos/beeuniqueMarketAltLogo.png" alt="logo" class="desktop">
+            <h1 class="desktop">{{root.title}}</h1>
+        </div>
+        <div class="mode">
+            <span id="theMode">Light mode: ON</span><span class="change">Activate Dark Mode</span>
+            
+        </div>
+        {% block nav %} {% include 'block/nav.html' %} {% endblock nav %}
+    </header>
+    {% endblock head%}
+</html>

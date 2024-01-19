@@ -1,0 +1,45 @@
+@import './root.less';
+@import './darkmode.less';
+
+
+@media @400 {
+
+    body {
+        header {
+            .header {
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media @730 {
+
+    body {
+        header {
+            .header {
+                .flexrow();
+
+                .desktop {
+                    display: flex;
+                }
+                .mobile {
+                    display: none;
+                }
+            }
+            nav {
+                .flexrow();
+
+                .icon {
+                    display: none;
+                }
+
+                #myLinks {
+                    .flexrow();
+                }
+            }
+        }
+    }
+}
